@@ -1,0 +1,366 @@
+/* General page styling */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f4f6fb;
+
+    color: #263248;
+
+    line-height: 1.6;
+
+}
+
+/* Navigation bar */
+
+nav {
+
+    background-color: #172554;
+
+    padding: 18px 8%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+nav h2 {
+
+    color: white;
+
+}
+
+nav ul {
+
+    list-style: none;
+
+    display: flex;
+
+    gap: 24px;
+
+}
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+}
+
+nav a:hover {
+
+    color: #93c5fd;
+
+}
+
+/* Main hero section */
+
+.hero {
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background-color: #dbeafe;
+
+}
+
+.hero h1 {
+
+    font-size: 42px;
+
+    margin-bottom: 10px;
+
+    color: #172554;
+
+}
+
+.hero p {
+
+    font-size: 18px;
+
+    margin-bottom: 24px;
+
+}
+
+.button {
+
+    display: inline-block;
+
+    background-color: #1d4ed8;
+
+    color: white;
+
+    padding: 12px 24px;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+}
+
+.button:hover {
+
+    background-color: #1e40af;
+
+}
+
+/* About section */
+
+.about {
+
+    max-width: 800px;
+
+    margin: 50px auto;
+
+    padding: 30px 24px;
+
+    text-align: center;
+
+}
+
+.about h2,
+
+footer h2 {
+
+    color: #172554;
+
+    margin-bottom: 16px;
+
+}
+
+/* Footer */
+
+footer {
+
+    background-color: #172554;
+
+    color: black;
+
+    text-align: center;
+
+    padding: 30px 20px;
+
+}
+
+footer h2 {
+
+    color: white;
+
+}
+
+footer a {
+
+    color: #bfdbfe;
+
+}
+
+/* Responsive layout for phones */
+
+@media (max-width: 600px) {
+
+    nav {
+
+        flex-direction: column;
+
+        gap: 12px;
+
+    }
+
+    nav ul {
+
+        gap: 14px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+    }
+
+    .hero {
+
+        padding: 55px 16px;
+
+    }
+
+    .hero h1 {
+
+        font-size: 30px;
+
+    }
+
+    .about {
+
+        margin: 25px auto;}
+}
+/* ===== PROJECTS PAGE STYLING ===== */
+
+/* Main sections */
+#skills,
+#projects,
+#services,
+#contact {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 25px;
+}
+
+/* Section headings */
+#skills h2,
+#projects h2,
+#services h2,
+#contact h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Skills layout */
+#skills {
+    background-color: #f4f6f9;
+    border-radius: 12px;
+}
+
+#skills p {
+    display: inline-block;
+    background-color: #e0e7ff;
+    color: #243b80;
+    padding: 10px 16px;
+    margin: 6px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* Projects layout */
+#projects {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+/* Keep the projects heading across all columns */
+#projects h2 {
+    grid-column: 1 / -1;
+}
+
+/* Individual project cards */
+.project-card {
+    background-color: #ffffff;
+    padding: 22px;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    color: #243b80;
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    line-height: 1.6;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #243b80;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.project-card a:hover {
+    background-color: #172554;
+}
+
+/* Services section */
+#services {
+    background-color: #f4f6f9;
+    border-radius: 12px;
+    line-height: 1.9;
+}
+
+/* Contact form */
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font: inherit;
+}
+
+#contact textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#contact button {
+    margin-top: 15px;
+    padding: 12px 20px;
+    background-color: #243b80;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #172554;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Mobile-friendly layout */
+@media (max-width: 768px) {
+    #projects {
+        grid-template-columns: 1fr;
+    }
+
+    #skills,
+    #projects,
+    #services,
+    #contact {
+        margin: 20px 12px;
+        padding: 18px;
+    }
+}
