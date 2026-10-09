@@ -8,18 +8,19 @@
 
     <!-- Connect your existing CSS file -->
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpeg" href="icon.jpeg">
 </head>
 
 <body>
 
     <!-- Navigation bar -->
     <header>
-        <nav>
+        <nav class="navbar">
             <h2>Debbie's Portfolio</h2>
 
-            <ul>
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -45,33 +46,41 @@
     </section>
 
     <!-- Projects section -->
-    <section id="projects">
         <h2>Projects I've Worked On</h2>
-
+    <div class="project-container">
         <div class="project-card">
-            <h3>Personal Portfolio Website</h3>
+
+            <div class="project-content">
+            <h3><strong>Portfolio Website</strong> </h3>
             <p>A website introducing me, my interests and my work.</p>
             <p><strong>Technologies:</strong> HTML, CSS</p>
             <a href="index.html">View Project</a>
+            </div>
         </div>
 
         <div class="project-card">
-            <h3>Projects Portfolio Page</h3>
+
+            <div class="project-content">
+            <h3><strong>Portfolio Page</strong> </h3>
             <p>A page showcasing my skills and projects.</p>
             <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
             <a href="projects.html">View Project</a>
+            </div>
         </div>
 
         <div class="project-card">
-            <h3>Contact Form</h3>
+
+        <div class="project-content">
+            <h3><strong>Contact Form</strong> </h3>
             <p>A form that allows visitors to send me a message.</p>
             <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
             <a href="#contact">View Contact Form</a>
         </div>
-    </section>
+        </div>
+    </div>
 
-    <!-- Services section -->
-    <section id="services">
+     <!-- Services section -->
+     <section id="services">
         <h2>Services I Can Offer</h2>
         <ul>
             <li>Basic Website Design</li>
@@ -81,22 +90,21 @@
     </section>
 
     <!-- Contact form -->
-    <section id="contact">
+    <section id="contact" class="contact-container">
         <h2>Contact Me</h2>
 
-        <form id="contactForm">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
+        <form id="contact-form" class="contact-form">
+            <input type="text" placeholder="Your Name" required>
 
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" placeholder="Your Email" required>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
+            <input type="text" placeholder="Subject">
 
-            <button type="submit">Send Message</button>
+            <textarea placeholder="Your Message" rows="6"></textarea>
 
-            <p id="formFeedback" aria-live="polite"></p>
+            <button type="submit" class="primary-btn">
+                Send Message
+            </button>
         </form>
     </section>
 
