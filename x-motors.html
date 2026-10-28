@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" href="motors.css" />
+    <link rel="icon" type="image/jpeg" href="car.png" />
+    <title>X-Motors</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <div class="logo"><span>X</span>-Motors</div>
+        <ul class="nav-links">
+          <li><a href="#luxury">Luxury</a></li>
+          <li><a href="#roadster">Roadster</a></li>
+          <li><a href="#sedan">Family</a></li>
+          <li><a href="#contact">Contact us</a></li>
+          <li><a href="#register">Register</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">Premium performance</p>
+          <h1>Get Your Dream Car with X-Motors, TODAY!!!</h1>
+          <p class="hero-text">
+            Choose from our vast variety of vehicles and drive home a car that matches
+            your lifestyle, personality, and ambition.
+          </p>
+          <div class="hero-actions">
+            <a href="#luxury" class="btn btn-primary">Explore models</a>
+            <a href="#contact" class="btn btn-secondary">Book a test drive</a>
+          </div>
+          <ul class="hero-stats">
+            <li>
+              <strong>500+</strong>
+              <span>Luxury cars</span>
+            </li>
+            <li>
+              <strong>24/7</strong>
+              <span>Support</span>
+            </li>
+            <li>
+              <strong>4.9/5</strong>
+              <span>Client rating</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-visual">
+          <div class="showcase-card" data-carousel role="region" aria-label="Featured cars" aria-roledescription="carousel">
+            <div class="showcase-slides">
+              <figure class="showcase-slide is-active" aria-hidden="false">
+                <img src="hero.jpg.jpeg" alt="Featured luxury car" />
+                <figcaption class="slide-caption">Discover your next drive</figcaption>
+              </figure>
+              <figure class="showcase-slide" aria-hidden="true">
+                <img src="porche.jpg.jpeg" alt="Porsche sports car" />
+                <figcaption class="slide-caption">Made for the open road</figcaption>
+              </figure>
+              <figure class="showcase-slide" aria-hidden="true">
+                <img src="audi.jpg.jpeg" alt="Audi performance car" />
+                <figcaption class="slide-caption">Performance with presence</figcaption>
+              </figure>
+            </div>
+            <button class="carousel-control carousel-previous" type="button" aria-label="Previous car image">
+              <span aria-hidden="true">&#8249;</span>
+            </button>
+            <button class="carousel-control carousel-next" type="button" aria-label="Next car image">
+              <span aria-hidden="true">&#8250;</span>
+            </button>
+            <div class="carousel-indicators" aria-label="Choose a car image">
+              <button class="carousel-indicator is-active" type="button" aria-label="Show image 1" aria-pressed="true"></button>
+              <button class="carousel-indicator" type="button" aria-label="Show image 2" aria-pressed="false"></button>
+              <button class="carousel-indicator" type="button" aria-label="Show image 3" aria-pressed="false"></button>
+            </div>
+            <span class="carousel-status" aria-live="polite">1 / 3</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="luxury" class="car-section">
+        <div class="section-title">
+          <p class="eyebrow">Luxury collection</p>
+          <h2>LUXURY VEHICLES</h2>
+        </div>
+
+        <div class="car-grid">
+          <article class="car-card">
+            <div class="car-image">
+              <img type="image/jpg"
+                src="ferari.jpg.jpeg"
+                alt="Luxury coupe"
+              />
+            </div>
+            <div class="car-content">
+              <h3>Ferrari Roma</h3>
+              <p>Grand touring performance wrapped in elegant Italian design.</p>
+              <div class="tags">
+                <span>V8</span>
+                <span>Automatic</span>
+                <span>2+2</span>
+              </div>
+              <a href="#register" class="car-link">Reserve now</a>
+            </div>
+          </article>
+
+          <article class="car-card">
+            <div class="car-image">
+              <img type="image/jpg"
+                src="mercedes.jpg.jpeg"
+                alt="Luxury sedan"
+              />
+            </div>
+            <div class="car-content">
+              <h3>Mercedes E-Class</h3>
+              <p>Luxury comfort, quiet cabin, and technology built for every journey.</p>
+              <div class="tags">
+                <span>Hybrid</span>
+                <span>4 door</span>
+                <span>Luxury</span>
+              </div>
+              <a href="#register" class="car-link">Reserve now</a>
+            </div>
+          </article>
+
+          <article class="car-card">
+            <div class="car-image">
+              <img type="image/jpg"
+                src="rolls royce.jpg.jpeg"
+                alt="Luxury SUV"
+              />
+            </div>
+            <div class="car-content">
+              <h3>Rolls Royce</h3>
+              <p>Commanding presence meets premium comfort and all-terrain capability.</p>
+              <div class="tags">
+                <span>4x4</span>
+                <span>SUV</span>
+                <span>7 seats</span>
+              </div>
+              <a href="#register" class="car-link">Reserve now</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="roadster" class="car-section roadster-section">
+        <div class="section-title">
+          <p class="eyebrow">Roadster edition</p>
+          <h2>BUILT FOR THRILL SEEKERS</h2>
+        </div>
+
+        <div class="car-grid">
+          <article class="car-card">
+            <div class="car-image">
+              <img type="image/jpg"
+                src="porche.jpg.jpeg"
+                alt="Roadster coupe"
+              />
+            </div>
+            <div class="car-content">
+              <h3>Porsche 911 Carrera</h3>
+              <p>Precision handling and iconic styling for every exhilarating drive.</p>
+              <div class="tags">
+                <span>Turbo</span>
+                <span>RWD</span>
+                <span>Sport</span>
+              </div>
+              <a href="#register" class="car-link">Reserve now</a>
+            </div>
+          </article>
+
+          <article class="car-card">
+            <div class="car-image">
+              <img type="image/jpg"
+                src="audi.jpg.jpeg"
+                alt="Sport roadster"
+              />
+            </div>
+            <div class="car-content">
+              <h3>Audi R8</h3>
+              <p>High-performance engineering with a bold design that turns heads.</p>
+              <div class="tags">
+                <span>V10</span>
+                <span>Quattro</span>
+                <span>Track</span>
+              </div>
+              <a href="#register" class="car-link">Reserve now</a>
+            </div>
+          </article>
+
+          <article class="car-card">
+            <div class="car-image">
+              <img type="image/jpg"
+                src="lamborghini.jpg.jpeg"
+                alt="Performance supercar"
+              />
+            </div>
+            <div class="car-content">
+              <h3>Lamborghini Huracán</h3>
+              <p>Emotion-packed power and unmistakable drama for true enthusiasts.</p>
+              <div class="tags">
+                <span>V10</span>
+                <span>Launch</span>
+                <span>Luxury</span>
+              </div>
+              <a href="#register" class="car-link">Reserve now</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="sedan" class="car-section alt-section">
+        <div class="section-title">
+          <p class="eyebrow">Family mobility</p>
+          <h2>FAMILY &amp; EVERYDAY DRIVING</h2>
+        </div>
+
+        <div class="car-grid">
+          <article class="car-card">
+            <div class="car-image">
+              <img type="image/jpg"
+                src="mercedes benz GLE.jpg.jpeg"
+                alt="Sedan"
+              />
+            </div>
+            <div class="car-content">
+              <h3>Mercedes benz GLE</h3>
+              <p>Effortless elegance and dependable power for modern family life.</p>
+              <div class="tags">
+                <span>Executive</span>
+                <span>Comfort</span>
+                <span>Safe</span>
+              </div>
+              <a href="#register" class="car-link">Reserve now</a>
+            </div>
+          </article>
+
+          <article class="car-card">
+            <div class="car-image">
+              <img
+                src="prado.jpg.jpeg"
+                alt="SUV family vehicle"
+              />
+            </div>
+            <div class="car-content">
+              <h3>Toyota Prado</h3>
+              <p>Spacious, safe, and stylish for family adventures and city drives.</p>
+              <div class="tags">
+                <span>Family</span>
+                <span>AWD</span>
+                <span>Hybrid</span>
+              </div>
+              <a href="#register" class="car-link">Reserve now</a>
+            </div>
+          </article>
+
+          <article class="car-card">
+            <div class="car-image">
+              <img
+                src="range.jpg.jpeg"
+                alt="Reliable family car"
+              />
+            </div>
+            <div class="car-content">
+              <h3>Range Rover</h3>
+              <p>Future-ready driving with all-electric efficiency and low maintenance.</p>
+              <div class="tags">
+                <span>EV</span>
+                <span>Auto</span>
+                <span>Eco</span>
+              </div>
+              <a href="#register" class="car-link">Reserve now</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="register" class="cta-section">
+        <div class="cta-copy">
+          <p class="eyebrow">Register your interest</p>
+          <h2>Reserve your next ride today.</h2>
+        </div>
+        <form class="register-form">
+          <input type="text" placeholder="Your name" aria-label="Name" />
+          <input type="email" placeholder="Email address" aria-label="Email" />
+          <button type="submit">Register</button>
+        </form>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div class="contact-card">
+          <div>
+            <p class="eyebrow">Contact us</p>
+            <h2>Your next adventure starts here.</h2>
+          </div>
+          <div class="contact-details">
+            <p>📍 Nairobi, Kenya</p>
+            <p>📞 +254 700 123 456</p>
+            <p>✉️ sales@xmotors.co.ke</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-logo"><span>X</span>-Motors</div>
+      <p>&copy; 2026 X-Motors. All rights reserved.</p>
+    </footer>
+    <script>
+      const carousel = document.querySelector("[data-carousel]");
+
+      if (carousel) {
+        const slides = [...carousel.querySelectorAll(".showcase-slide")];
+        const indicators = [...carousel.querySelectorAll(".carousel-indicator")];
+        const status = carousel.querySelector(".carousel-status");
+        let activeIndex = 0;
+        let timer;
+
+        function showSlide(index) {
+          activeIndex = (index + slides.length) % slides.length;
+
+          slides.forEach((slide, slideIndex) => {
+            const isActive = slideIndex === activeIndex;
+            slide.classList.toggle("is-active", isActive);
+            slide.setAttribute("aria-hidden", String(!isActive));
+            indicators[slideIndex].classList.toggle("is-active", isActive);
+            indicators[slideIndex].setAttribute("aria-pressed", String(isActive));
+          });
+
+          status.textContent = `${activeIndex + 1} / ${slides.length}`;
+        }
+
+        function stopSlideshow() {
+          window.clearInterval(timer);
+        }
+
+        function startSlideshow() {
+          stopSlideshow();
+          if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+            timer = window.setInterval(() => showSlide(activeIndex + 1), 5000);
+          }
+        }
+
+        carousel.querySelector(".carousel-previous").addEventListener("click", () => {
+          showSlide(activeIndex - 1);
+        });
+
+        carousel.querySelector(".carousel-next").addEventListener("click", () => {
+          showSlide(activeIndex + 1);
+        });
+
+        indicators.forEach((indicator, index) => {
+          indicator.addEventListener("click", () => {
+            showSlide(index);
+          });
+        });
+
+        carousel.addEventListener("mouseenter", stopSlideshow);
+        carousel.addEventListener("mouseleave", startSlideshow);
+        carousel.addEventListener("focusin", stopSlideshow);
+        carousel.addEventListener("focusout", (event) => {
+          if (!carousel.contains(event.relatedTarget)) startSlideshow();
+        });
+        startSlideshow();
+      }
+    </script>
+  </body>
+</html>
